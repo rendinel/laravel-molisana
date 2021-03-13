@@ -1,0 +1,11 @@
+@mixin fl-row-c{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+@mixin fl-row-sp{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

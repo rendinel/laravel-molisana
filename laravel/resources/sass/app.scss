@@ -1,0 +1,105 @@
+@import "color";
+@import "positions";
+// classi comuni
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+// classi comuni
+
+// header
+.logo {
+  margin: 0 auto;
+  @include fl-row-c;
+}
+
+nav{
+  margin-top: 2.5rem;
+ & > ul{
+  height: 5rem;
+  line-height: 5rem;
+  list-style:none;
+  text-align: center;
+    & > li{
+      display: inline-block;
+      margin-right: 1.5rem;
+      font-size: 2rem;
+      &:hover{
+        background-color: $color-light-blue;
+      }
+    }
+  }
+}
+// fine header
+
+// footer
+
+.container-footer{
+  width: 120rem;
+  margin: 0 auto;
+  @include fl-row-sp;
+  & > .col{
+    width: 22%;
+    height: 100%;
+  }
+  & > .two{
+    & > ul{
+      list-style: none;
+      & > li:first-child{
+        font-size:2.5rem;
+        font-weight: bolder;
+        margin: 2.5rem 0 2.5rem 0;
+        color: $color-dark-blue;
+      }
+      & > li{
+        font-size: 1.5rem;
+        color: $color-gray;
+      }
+    }
+  }
+  & > .three{
+    & > ul{
+      list-style: none;
+      & > li{
+        font-size: 1.5rem;
+        color: $color-gray;
+      }
+    }
+    & > ul:first-child{
+      & > li:first-child{
+        font-size:2.5rem;
+        font-weight: bolder;
+        margin: 2.5rem 0 2.5rem 0;
+        color: $color-dark-blue;
+      }
+    }
+    & > ul:nth-child(2){
+      & > li:first-child{
+        font-size:2.5rem;
+        font-weight: bolder;
+        margin: 2.5rem 0 2.5rem 0;
+        color: $color-gray;
+      }
+    }
+  }
+  & > .four{
+    & > ul{
+      list-style: none;
+      & > li{
+        font-size: 1.5rem;
+        color: $color-gray;
+        & > span:first-child{
+          color: $color-darkest-gray;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+
+
+// fine footer

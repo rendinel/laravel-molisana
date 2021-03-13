@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+nav {
+  margin-top: 2.5rem;
+}
+nav > ul {
+  height: 5rem;
+  line-height: 5rem;
+  list-style: none;
+  text-align: center;
+}
+nav > ul > li {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 2rem;
+}
+nav > ul > li:hover {
+  background-color: #B2E5FC;
+}
+
+.container-footer {
+  width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container-footer > .col {
+  width: 22%;
+  height: 100%;
+}
+.container-footer > .two > ul {
+  list-style: none;
+}
+.container-footer > .two > ul > li:first-child {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 2.5rem 0 2.5rem 0;
+  color: #0D2240;
+}
+.container-footer > .two > ul > li {
+  font-size: 1.5rem;
+  color: #737373;
+}
+.container-footer > .three > ul {
+  list-style: none;
+}
+.container-footer > .three > ul > li {
+  font-size: 1.5rem;
+  color: #737373;
+}
+.container-footer > .three > ul:first-child > li:first-child {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 2.5rem 0 2.5rem 0;
+  color: #0D2240;
+}
+.container-footer > .three > ul:nth-child(2) > li:first-child {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin: 2.5rem 0 2.5rem 0;
+  color: #737373;
+}
+.container-footer > .four > ul {
+  list-style: none;
+}
+.container-footer > .four > ul > li {
+  font-size: 1.5rem;
+  color: #737373;
+}
+.container-footer > .four > ul > li > span:first-child {
+  color: #3D3D45;
+  font-weight: bolder;
+}
