@@ -56,7 +56,7 @@ $urls = [
     </ul>
     {{-- <img src="..img/gr.jpg" alt="">
     <img src="..img/wh.jpg" alt=""> --}}
-    <img src="{{ asset('..img/gr.jpg') }}" />
+    {{-- <img src="{{ asset('..img/gr.jpg') }}" /> --}}
     {{-- @foreach ($urls as $keyitem => $item)
     <img src="{{$urls['src']}}" alt="">
     @endforeach --}}

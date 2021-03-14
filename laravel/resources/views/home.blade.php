@@ -140,6 +140,35 @@
   <body>
 
     @include('header')
+
+    <div class="jumbotron-home">
+      <div class="container">
+
+        <h2>Le Lunghe</h2>
+        @foreach ($array as $id => $pasta)
+          @if ($pasta['tipo'] === 'lunga')
+            <a href="/product/{{$id + 1}}"><img class="paster" src="{{$pasta['src']}}" alt=""></a>
+          @endif
+        @endforeach
+
+        <h2>Le Corte</h2>
+      @foreach ($array as $id => $pasta)
+        @if($pasta['tipo'] === 'corta')
+          <a href="/product/{{$id + 1}}"><img class="paster" src="{{$pasta['src']}}" alt=""></a>
+        @endif
+      @endforeach
+
+      <h2>Le Cortissime</h2>
+      @foreach ($array as $id => $pasta)
+        @if($pasta['tipo'] === 'cortissima')
+          <a href="/product/{{$id + 1}}"><img class="paster" src="{{$pasta['src']}}" alt=""></a>
+        @endif
+      @endforeach
+
+      </div>
+    </div>
+
     @include('footer')
+
   </body>
 </html>
